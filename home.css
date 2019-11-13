@@ -1,0 +1,291 @@
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+}
+
+div {
+  display: block;
+}
+
+section {
+  display: block;
+}
+
+#header {
+  height: 100vh;
+  position: relative;
+  background-image: url(./assets/trianglify.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin: 0 2%;
+  position: relative;
+}
+
+.bio {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.bio h1 {
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.35em;
+}
+
+.bio p {
+  font-size: 32px;
+}
+
+p {
+  display: block;
+}
+
+/* about section */
+#about {
+  font-weight: 300;
+  height: auto;
+}
+
+#about h2 {
+  font-size: 30px;
+  line-height: 1.35em;
+}
+
+.left-column {
+  float: left;
+  width: 47%;
+  line-height: 1.6;
+}
+
+.left-column p {
+  display: block;
+  font-size: 20px;
+  line-height: 1.35em;
+  margin: 1em 0px;
+}
+
+.right-column {
+  float: right;
+  width: 47%;
+  line-height: 1.6;
+}
+
+.right-column p {
+  display: block;
+  font-size: 20px;
+  line-height: 1.35em;
+  margin: 1em 0px;
+}
+
+.right-column img {
+  width: 100%;
+}
+
+.container {
+  padding: 2% 10%;
+}
+
+/* skills section  */
+#skills {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#skills div:nth-child(odd) {
+  width: 60%;
+}
+
+#skills div:nth-child(even) {
+  width: 40%;
+}
+
+#skills div h2 {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.35em;
+  margin: 0.83em 0px;
+  font-weight: bold;
+}
+
+#skills div img {
+  display: inline-block;
+  margin: 0 5% 3% 0;
+  height: 70px;
+}
+
+.bg {
+  background-color: #cdedf6;
+}
+/* portfolio section  */
+#portfolio {
+  font-weight: 300;
+}
+
+#portfolio h2 {
+  border-bottom: 2px solid #eee;
+  font-size: 30px;
+  line-height: 1.35em;
+  margin: 0.83em 0px;
+  font-weight: bold;
+}
+
+.first-project {
+  padding-bottom: 7%;
+  display: flex;
+  flex-direction: row;
+}
+.picture-half {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.picture-half img {
+  width: 100%;
+}
+
+.text-half {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.text-half h3 {
+  font-size: 24px;
+  line-height: 1.35em;
+  margin: 0.83em 0px;
+  font-weight: bold;
+}
+
+.text-half p {
+  font-size: 20px;
+  line-height: 1.35em;
+  margin: 1em 0px;
+}
+
+.button {
+  border: 3px solid #5eb1bf;
+  color: #5eb1bf;
+  font-size: 1em;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 8px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.button img,
+.button p {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  margin: 0 5px;
+  line-height: 1em;
+}
+
+/* contact section */
+footer {
+  display: block;
+}
+
+#contact {
+  height: 25%;
+  padding-top: 1%;
+  background-color: #cdedf6;
+  color: black;
+}
+
+#contact h2 {
+  font-size: 24px;
+  line-height: 1.35em;
+  margin: 0.83em 0px;
+  font-weight: bold;
+}
+
+#contact p {
+  font-size: 20px;
+  line-height: 1.35em;
+  margin: 1em 0px;
+}
+
+#contact img {
+  height: 40px;
+  margin-right: 2%;
+}
+
+/* media queries  */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 24px;
+    line-height: 1.35em;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 1.35em;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.35em;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  .bio h1 {
+    font-size: 40px;
+  }
+  .bio p {
+    font-size: 24px;
+  }
+  .left-column,
+  .right-column {
+    float: none;
+    width: 100%;
+  }
+  #skills {
+    flex-direction: column;
+  }
+  #skills div:nth-child(odd),
+  #skills div:nth-child(even) {
+    width: 100%;
+  }
+  #skills div img {
+    height: 45px;
+  }
+  .first-project {
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+  .left-half {
+    width: 100%;
+  }
+  .right-half {
+    width: 100%;
+  }
+  #contact img {
+    height: 35px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 330px) {
+  .button {
+    padding: 5px;
+    margin-right: 0;
+    max-width: 43%;
+    width: auto;
+  }
+}

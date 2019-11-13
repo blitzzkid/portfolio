@@ -1,0 +1,14 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  box-sizing: inherit;
+  font-family: "Roboto Slab", serif;
+}
+
+a:visited {
+  text-decoration: none;
+}
