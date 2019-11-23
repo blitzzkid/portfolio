@@ -4,29 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" type="text/css" />
-    <link rel="stylesheet" href="./home.css" type="text/css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Melvin Tan</title>
   </head>
   <body>
     <div id="mainContainer">
       <section id="header">
-        <nav>
-          <a href="./index.html">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="bio">
-          <h1>Melvin Tan</h1>
-          <p>ThoughtWorks JumpStart Trainee</p>
-          <p>Aspiring Full Stack Developer</p>
-          <p>Based in Singapore</p>
+        <div class="container">
+          <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="bio">
+            <h1>Melvin Tan</h1>
+            <p>ThoughtWorks JumpStart Trainee</p>
+            <p>Aspiring Full Stack Developer</p>
+            <p>Based in Singapore</p>
+          </div>
         </div>
       </section>
       <section id="about" class="container">
@@ -36,8 +36,8 @@
             Hi there! I'm Melvin and I have recently graduated from the
             JumpStart course at ThoughtWorks Singapore. The course teaches us
             JavaScript and its frameworks such as ReactJs, NodeJs and ExpressJs.
-            More importantly, we are inculcated with agile software delivery
-            practices including test driven development and pair programming
+            More importantly, we are inculcated with agile practices including
+            test driven development and pair programming
           </p>
           <p>
             Previously I was an Account Manager at Creitive Digital Agency where
@@ -64,39 +64,41 @@
           <img src="./assets/dev.svg" alt="developer" />
         </div>
       </section>
-      <section id="skills" class="container bg">
-        <div>
-          <h2>
-            Languages
-          </h2>
-          <img src="./assets/html5.svg" alt="HTML5" />
-          <img src="./assets/css3.svg" alt="CSS3" />
-          <img src="./assets/javascript.svg" alt="JavaScript" />
-          <img src="./assets/python.png" alt="python" />
-          <img src="./assets/sql.png" alt="sql" />
-        </div>
-        <div>
-          <h2>
-            JavaScript Frameworks / Libraries
-          </h2>
-          <img src="./assets/react.png" alt="reactjs" />
-          <img src="./assets/nodejs.png" alt="reactjs" />
-          <img src="./assets/Jest.png" alt="jestJs" />
-          <img src="./assets/express.svg" alt="reactjs" />
-          <img src="./assets/cypress.png" alt="jestJs" />
-        </div>
-        <div>
-          <h2>
-            Databases
-          </h2>
-          <img src="./assets/mongodb.png" alt="" />
+      <section id="skills" class="bg">
+        <div class="container">
+          <div>
+            <h2>
+              Languages
+            </h2>
+            <img src="./assets/html5.svg" alt="HTML5" />
+            <img src="./assets/css3.svg" alt="CSS3" />
+            <img src="./assets/javascript.svg" alt="JavaScript" />
+            <img src="./assets/python.png" alt="python" />
+            <img src="./assets/sql.png" alt="sql" />
+          </div>
+          <div>
+            <h2>
+              JavaScript Frameworks / Libraries
+            </h2>
+            <img src="./assets/react.png" alt="reactjs" />
+            <img src="./assets/nodejs.png" alt="reactjs" />
+            <img src="./assets/Jest.png" alt="jestJs" />
+            <img src="./assets/express.svg" alt="reactjs" />
+            <img src="./assets/cypress.png" alt="jestJs" />
+          </div>
+          <div>
+            <h2>
+              Databases
+            </h2>
+            <img src="./assets/mongodb.png" alt="" />
+          </div>
         </div>
       </section>
       <section id="portfolio" class="container">
         <h2>
           ThoughtWorks JumpStart Projects
         </h2>
-        <div class="first-project">
+        <div class="left-project">
           <div class="picture-half">
             <img
               src="./assets/jumpstart-individual.png"
@@ -146,7 +148,7 @@
             </a>
           </div>
         </div>
-        <div class="first-project">
+        <div class="right-project">
           <div class="text-half">
             <h3>Team project</h3>
             <p>
@@ -206,7 +208,7 @@
         <h2>
           Self Initiated Personal Projects
         </h2>
-        <div class="first-project">
+        <div class="left-project">
           <div class="picture-half">
             <img src="./assets/personal-project1.png" alt="first project" />
           </div>
@@ -236,26 +238,31 @@
           </div>
         </div>
       </section>
-      <footer id="contact" class="container bg">
-        <div>
-          <h2>Melvin Tan</h2>
-          <p>
-            If you would like to contact me, drop me a message on LinkedIn!
-          </p>
-        </div>
-        <div id="social-media">
-          <a href="https://github.com/mtan014">
-            <img src="./assets/githublogo.svg" alt="Melvin's Github Repo" />
-          </a>
-          <a href="https://www.linkedin.com/in/melvinjosephtan/">
-            <img src="./assets/linkedin.svg" alt="Melvin's LinkedIn Profile" />
-          </a>
-          <a href="https://stackoverflow.com/story/melvinjosephtan">
-            <img
-              src="./assets/stackoverflow.png"
-              alt="Melvin's Stackoverflow Profile"
-            />
-          </a>
+      <footer id="contact" class="bg">
+        <div class="container">
+          <div>
+            <h2>Melvin Tan</h2>
+            <p>
+              If you would like to contact me, drop me a message on LinkedIn!
+            </p>
+          </div>
+          <div id="social-media">
+            <a href="https://github.com/mtan014">
+              <img src="./assets/githublogo.svg" alt="Melvin's Github Repo" />
+            </a>
+            <a href="https://www.linkedin.com/in/melvinjosephtan/">
+              <img
+                src="./assets/linkedin.svg"
+                alt="Melvin's LinkedIn Profile"
+              />
+            </a>
+            <a href="https://stackoverflow.com/story/melvinjosephtan">
+              <img
+                src="./assets/stackoverflow.png"
+                alt="Melvin's Stackoverflow Profile"
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </div>

@@ -1,14 +1,262 @@
-:root {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
 * {
   margin: 0;
-  box-sizing: inherit;
-  font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
 }
 
 a:visited {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.bg {
+  background-color: #cdedf6;
+}
+
+#header {
+  height: 100vh;
+  position: relative;
+  background-image: url(./assets/trianglify.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin: 0 20px;
+}
+
+.bio {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.bio h1 {
+  font-size: 60px;
+  line-height: 1.35em;
+}
+
+.bio p {
+  font-size: 32px;
+}
+
+/* about section */
+#about h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  line-height: 1.35em;
+}
+
+.left-column {
+  float: left;
+  width: 47%;
+  line-height: 1.6;
+}
+
+.left-column p,
+.right-column p {
+  line-height: 1.5em;
+  margin: 1em 0px;
+}
+
+.right-column {
+  float: right;
+  width: 47%;
+  line-height: 1.6;
+}
+
+.right-column img {
+  width: 100%;
+}
+
+/* skills section  */
+#skills {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#skills > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills > div > div {
+  width: 50%;
+}
+
+#skills > div > div h2 {
+  font-size: 24px;
+  line-height: 1.35em;
+  margin: 30px 0 20px;
+}
+
+#skills > div > div img {
+  margin: 0 20px 20px 0;
+  height: 60px;
+}
+
+/* portfolio section  */
+#portfolio h2 {
+  margin: 50px 0 20px;
+  border-bottom: 2px solid #eee;
+  font-size: 30px;
+  line-height: 1.35em;
+}
+
+.left-project, .right-project {
+  padding-bottom: 7%;
+  display: flex;
+  flex-direction: row;
+}
+
+.picture-half,
+.text-half {
+  width: 49%;
+  margin-right: 30px;
+}
+
+.picture-half img {
+  width: 100%;
+}
+
+.text-half h3 {
+  font-size: 24px;
+  line-height: 1.35em;
+  margin: 0.83em 0px;
+}
+
+.text-half p {
+  line-height: 1.35em;
+  margin: 1em 0px;
+}
+
+.button {
+  border: 3px solid #5eb1bf;
+  color: #5eb1bf;
+  font-size: 1em;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 8px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #5eb1bf;
+  color: white;
+}
+
+.button img,
+.button p {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  margin: 0 5px;
+  line-height: 1em;
+}
+
+/* contact section */
+
+#contact {
+  padding: 20px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  line-height: 1.35em;
+  margin: 0.83em 0px;
+}
+
+#contact p {
+  line-height: 1.35em;
+  margin: 1em 0px;
+}
+
+#contact img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  p {
+    font-size: 16px;
+  }
+
+  #header nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #header .bio h1 {
+    font-size: 40px;
+  }
+
+  #header .bio p {
+    font-size: 22px;
+  }
+
+  #about h2,
+  #portfolio h2 {
+    font-size: 26px;
+  }
+
+  #about .left-column,
+  #about .right-column {
+    width: 100%;
+  }
+
+  #skills > div > div {
+    width: auto;
+  }
+
+  #skills > div > div h2 {
+    font-size: 22px;
+  }
+
+  #skills > div > div img {
+    height: 40px;
+  }
+
+  #portfolio .left-project {
+    flex-direction: column;
+  }
+
+  #portfolio .right-project {
+    flex-direction: column-reverse;
+  }
+
+  .picture-half, .text-half {
+    width: auto;
+  }
 }
